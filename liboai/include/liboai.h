@@ -104,7 +104,7 @@ namespace liboai {
 
 			/*
 				@brief A pointer to the Rerank component class that
-					provides access to its OpenAI API endpoints.
+					provides access to compatible servers' reranking endpoints.
 			*/
 			std::unique_ptr<liboai::Rerank> Rerank;
 

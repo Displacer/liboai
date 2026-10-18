@@ -11,7 +11,6 @@ liboai::Response liboai::Rerank::create(
     jcon.push_back("query", query);
 
     nlohmann::json docs = nlohmann::json::array();
-    //docs.reserve(documents.size());
     for (auto sv : documents) docs.emplace_back(std::string(sv));
     jcon.push_back("documents", docs);
 
